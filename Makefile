@@ -1,3 +1,4 @@
+CC=gcc
 CFLAGS=-Wall -Wextra -pedantic -ggdb -std=c11
 
 main: main.c

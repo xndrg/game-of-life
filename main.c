@@ -9,7 +9,7 @@
 
 #ifdef _WIN32
 #include <windows.h>
-#define sleep(ms) Sleep(ms)
+#define usleep(ms) Sleep((ms)/1000)
 #else
 #include <unistd.h>
 #endif
