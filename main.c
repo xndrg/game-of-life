@@ -3,13 +3,15 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 #define SMATH_IMPLEMENTATION
 #include "smath.h"
 
 #ifdef _WIN32
+#include <windows.h>
 #define sleep(ms) Sleep(ms)
+#else
+#include <unistd.h>
 #endif
 
 #define SCREEN_WIDTH 64
